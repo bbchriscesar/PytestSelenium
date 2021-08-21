@@ -1,0 +1,13 @@
+{
+  "FirstName": "Donald",
+  "LastName": "Trump",
+  "Phone": "123456789",
+  "Email": "donaldtrumppotus@sample.com",
+  "Address": "Mountain View",
+  "City": "California",
+  "State": "California",
+  "PostalCode": "35000",
+  "Username": "donaldtrumppotus",
+  "Password": "donaldtrumppotus",
+  "ConfirmPassword": "donaldtrumppotus"
+}
