@@ -12,7 +12,7 @@ class BaseClass:
 
     @staticmethod
     def readJSONConfig(jsondata):
-        with open('C:\\Code\\PytestSelenium\\data\\' + jsondata + '.json') as json_data:
+        with open('.\\data\\' + jsondata + '.json') as json_data:
             data = json.load(json_data)
         return data
 
