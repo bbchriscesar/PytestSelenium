@@ -12,6 +12,8 @@ def setup(request):
         driver = webdriver.Chrome(executable_path=".\\drivers\\chromedriver.exe")
     elif browser_name == "firefox":
         driver = webdriver.Firefox(executable_path=".\\drivers\\geckodriver.exe")
+    elif browser_name == "edge":
+        driver = webdriver.Edge(executable_path=".\\drivers\\msedgedriver.exe")
     driver.maximize_window()
     driver.get("http://demo.guru99.com/test/newtours/")
     request.cls.driver = driver
