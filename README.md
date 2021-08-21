@@ -1,6 +1,6 @@
 # Pytest Selenium
 
-**Command:** _`pytest -m "signon or login or register" --html=report1.html --capture=tee-sys`_
+**Command:** _`pytest -m "signon or login or register"`_
 
 
 ###### **IDE: PyCharm**
