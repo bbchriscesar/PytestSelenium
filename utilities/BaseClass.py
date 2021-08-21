@@ -1,8 +1,8 @@
 import inspect
 import json
 import logging
-import sys
 import pytest
+from datetime import datetime
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
@@ -21,7 +21,7 @@ class BaseClass:
         loggerName = inspect.stack()[1][3]
         logger = logging.getLogger(loggerName)
 
-        fileHandler = logging.FileHandler(loggerName + '.log')
+        fileHandler = logging.FileHandler('.\\logs\\' + loggerName + ' ' + datetime.now().strftime("%d-%m-%Y %H-%M-%S") + '.log')
         formatter = logging.Formatter("%(asctime)s :%(levelname)s : %(name)s :%(message)s")
         fileHandler.setFormatter(formatter)
 
