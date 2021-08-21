@@ -40,7 +40,7 @@ class BaseClass:
             raise ValueError('Element not visible')
 
     def click(self, locator):
-        wait = WebDriverWait(self.driver, 5)
+        wait = WebDriverWait(self.driver, 30)
         try:
             element = wait.until(EC.element_to_be_clickable((locator[0], locator[1])))
             element.click()
